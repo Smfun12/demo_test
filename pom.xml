@@ -20,7 +20,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>maven-remote.ant</groupId>
+            <groupId>ant</groupId>
             <artifactId>ant</artifactId>
             <version>1.4.1</version>
         </dependency>
