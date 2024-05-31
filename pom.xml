@@ -8,12 +8,6 @@
     <artifactId>demo_test</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <repositories>
-        <repository>
-            <id>jfrog-instance-id</id>
-            <url>https://artifactory.sdetools.wsib.ca/artifactory</url>
-        </repository>
-    </repositories>
     <properties>
         <java.version>8</java.version>
     </properties>
@@ -25,5 +19,16 @@
             <version>1.4.1</version>
         </dependency>
     </dependencies>
-
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>artifactory-0-release</name>
+            <url>https://artifactory.sdetools.wsib.ca/artifactory/libs-release</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>artifactory-0-snapshots</name>
+            <url>https://artifactory.sdetools.wsib.ca/artifactory/libs-snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
